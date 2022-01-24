@@ -33,15 +33,16 @@ person/person.proto:7:1: Import <span style=color:#e6db74>&#34;google/api/annota
 │       └── http.proto
 └── helloworld
     └── hello_world.proto
-</code></pre><p>发现按照文档里的要求是做不到的，最后根据报错信息，把<code>descriptor.proto</code>引入到<code>google/protobuf</code>下即可</p><p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F08%2F20180608010339_nUV5Y.thumb.400_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1644719154&t=322053f0aa2a888baa05745efc808b33" alt title=点击查看图片来源></p><p>目录结构为：</p><pre><code></code></pre><p>proto
+</code></pre><p>发现按照文档里的要求是做不到的，最后根据报错信息，把<code>descriptor.proto</code>引入到<code>google/protobuf</code>下即可</p><p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F08%2F20180608010339_nUV5Y.thumb.400_0.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1644719154&t=322053f0aa2a888baa05745efc808b33" alt title=点击查看图片来源></p><p>目录结构为：</p><pre><code>proto
 ├── google
-│ └── api
-│ ├── annotations.proto
-│ └── http.proto
-│ └── protobuf
-│ └── descriptor.proto
+│   └── api
+│       ├── annotations.proto
+│       └── http.proto
+│   └── protobuf
+│       └── descriptor.proto
 └── helloworld
-└── hello_world.proto</p><pre><code></code></pre><p>D:\GOPATH\pkg\mod\github.com\golang\protobuf@v1.3.3\protoc-gen-go\descriptor\descriptor.proto</p><p>代码：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-protobuf data-lang=protobuf><span style=color:#75715e>// Protocol Buffers - Google&#39;s data interchange format
+    └── hello_world.proto
+</code></pre><p>D:\GOPATH\pkg\mod\github.com\golang\protobuf@v1.3.3\protoc-gen-go\descriptor\descriptor.proto</p><p>代码：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-protobuf data-lang=protobuf><span style=color:#75715e>// Protocol Buffers - Google&#39;s data interchange format
 </span><span style=color:#75715e>// Copyright 2008 Google Inc.  All rights reserved.
 </span><span style=color:#75715e>// https://developers.google.com/protocol-buffers/
 </span><span style=color:#75715e>//
